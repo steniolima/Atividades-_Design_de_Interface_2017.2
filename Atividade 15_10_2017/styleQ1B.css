@@ -1,0 +1,43 @@
+
+a {
+	
+	color: white;
+	
+}
+body {
+	background-color: lightgray;
+	
+}
+
+nav {
+	
+	background-color: green;
+
+}	
+	
+.relative {
+	position: relative;
+    top: 10px;
+	left:300;
+	width: 1000px;
+	
+}
+
+
+
+
+.absolute {
+	position: absolute;
+
+}
+
+
+
+
+.fixed {
+	position: fixed;
+    top: 350px;
+	left: 950px;
+    width: 400px;
+	height: 400px;
+}

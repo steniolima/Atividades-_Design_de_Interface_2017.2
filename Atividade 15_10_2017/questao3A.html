@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title> Questao 3 - A </title>
+	
+	
+	 <script language="javascript" type="text/javascript">
+ 
+   function validar() {
+   
+   var nome = form1.nome.value;
+   var email = form1.email.value;
+   var telefone = form1.telefone.value;
+   var cpf = form1.cpf.value;
+  
+ 
+	 if (form1.nome.value == "" || form1.nome.value == null || form1.nome.value < 80 ) { 
+	    alert ('Campo NOME vazio ou limite de 80 caracteres excedido');
+		form1.nome.focus();
+	    return false;
+	}
+	
+	
+	  if  (form1.email.value == null ){
+         alert('Campo EMAIL vazio, preencha corretamente');	
+		 form1.email.focus();
+		 return false;
+	
+	}
+	
+	if (form1.telefone.value == 'a-Z' || form1.telefone.value == null) {
+	   alert('Apenas numeros no campo TEELFONE');
+	   form1.telefone.focus();
+	   return false;
+	
+   }
+   
+   
+   if (form1.cpf.value == null) {
+      alert ('Campo CPF vazio');
+	  form1.cpf.focus();
+	  return false;
+      
+   }
+
+	  
+   alert ('OK');
+   
+ 
+  }
+ 
+ </script>
+ 
+	
+  </head> 
+ <body>
+ 
+ <h2> Formulário </h2>
+ <form name="form1" method="post" id="form1">
+  <p> Nome: <input type="text" name="nome" id="nome" placeholder="Seu nome aqui"> </p>
+  <p>Email: <input type="email" name="email" id="email"> </p>
+  <p>Telefone: <input type="tel" name="telefone" id="telefone"></p>
+  <p>CPF: <input type="number" name="cpf" id="cpf"> </p>
+  <input type="submit" onclick="return validar()">
+ </form>
+ 
+
+ 
+ </body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+   <head>  
+     <title> Questao 3 - B </title>
+	  
+	 <script language="javascript" type="text/javascript">
+	  
+            function calculo () {
+	          var valor = form1.valor.value;
+	          var parcela = form1.parcela.value;
+			  var i = 0.010;
+			
+			  var divisao = (valor) / (parcela);
+			  var juros = (valor) * (i) * (parcela);   //Juros simples
+		  	  var somatotal = (divisao) + (juros);
+		  
+		  
+		  
+		  	if (valor == "") {
+			  alert ("Campo VALOR vazio");
+			}	 
+			
+			
+		    if (parcela == "") {
+			  alert ("Campo PARCELAS vazio");
+			}	 
+		   
+		  
+		     alert("Valor solicitado:\n R$" +valor);
+		     alert("Parcelas solicitadas:\n" +parcela);
+		     alert("Total a pagar por parcela:\n R$" +somatotal);
+		     
+			 
+		 } 
+     </script> 
+	
+   </head>
+ <body>
+
+  <form method="post" name="form1" id="form1">
+  
+    <p> Valor total do emprestimo <input type="number" name="valor" id="valor" placeholder="Valor" > </p> 
+    <p> Informe as parcelas: <input type="number" name="parcela" id="parcela" placeholder="Parcelas"> </p>
+	
+	<input type="submit" onclick="return calculo()">
+	
+	<br>
+	<br>
+	<p> Com juros simples. <p>
+
+  </form>
+  
+ </body>  
+</html>
